@@ -23,7 +23,7 @@
         ]
     };
     // 元素创建器 ↓ 这条代码遵循 Apache 协议，原作者还是我，源在另一个库里
-    function createNewElement(Parent,Element,Content,Attributes,Styles){let $Element=document.createElement(Element);if(!!Content){$Element.appendChild(document.createTextNode(Content));};if(!!Attributes){Attributes.forEach($a=>{let $b=$a.split("=");$Element.setAttribute($b[0],$b[1]);});};if(!!Styles){Styles.forEach($a=>{let $b=$a.split("=");$Element.style[$b[0]]=$b[1];});};document.querySelector(Parent).appendChild($Element);};
+    function createNewElement(Parent,Element,Content,Attributes,Styles){let $Element=document.createElement(Element);if(!!Content){$Element.appendChild(document.createTextNode(Content));};if(!!Attributes){Attributes.forEach($a=>{if(RegExp("=").test($a)){let $b=$a.split("=");$Element.setAttribute($b[0],$b[1]);}else{$Element.setAttribute($a);}});};if(!!Styles){Styles.forEach($a=>{if(RegExp("=").test($a)){let $b=$a.split("=");$Element.setAttribute($b[0],$b[1]);}else{$Element.setAttribute($a);}});};document.querySelector(Parent).appendChild($Element);};
     // 检测需要的资源
     let $el = document.querySelector("[a-srclist]").getAttribute("a-srclist");
     if (RegExp("jquery","i").test($el)) {

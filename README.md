@@ -11,6 +11,7 @@
 ```
 ---
 ### 间接引入
+> 此方法有一定可能不管用
 
 ```html
 <script a-srclist src="https://mirror.aigio1064.top/autoinduct.js"></script>
@@ -28,6 +29,8 @@ jquery,vue,react
 忽略大小写
 忽略先后顺序
 忽略分隔符
+单词可拼接：jquery-ui将同时引入jquery和jquery-ui
+强制单词拼写检查
 ```
 ---
 ## 可使用的资源  
