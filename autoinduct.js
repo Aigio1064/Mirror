@@ -67,7 +67,7 @@
     };
     if (RegExp("react","i").test($el)) {
         $resourcesList.react.forEach($a => {
-            createNewElement("head","script","",["src="+$a,"crossorigin=\'\'"])
+            createNewElement("head","script","",["src="+$a,"crossorigin"])
         })
     };
     // 释放变量
