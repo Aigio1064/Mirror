@@ -37,11 +37,11 @@ jquery,vue,react-dom
 ## 可使用的资源  
 > 只保留最新发行资源，不保留历史版本，有需要请到正常 CDN 站点查看  
 
-| 资源标签 | 版本 | 脚本自动引入资源名 |
-| :----: | :----: | :----: |
-| jquery | 3.6.1 | jquery.min.js |
-| jquery-ui | 1.13.2 | jquery-ui.min.js |
-| vue | 2.7.13 | vue.min.js |
-| react | 16.8.0 | react.production.min.js |
-| react-dom | 16.8.0 | react-dom.production.min.js |
-| babel-standalone | 6.26.0 | babel.min.js |
+| 资源标签 | 版本 | 脚本自动引入资源名 | 备注 |
+| :----: | :----: | :----: | :----: |
+| jquery | 3.6.1 | jquery.min.js | GitHub提示风险: package.json |
+| jquery-ui | 1.13.2 | jquery-ui.min.js |  |
+| vue | 2.7.13 | vue.min.js | Vue3无法在浏览器使用，仅保存最新Vue2 |
+| react | 16.8.0 | react.production.min.js |  |
+| react-dom | 16.8.0 | react-dom.production.min.js |  |
+| babel-standalone | 6.26.0 | babel.min.js |  |
