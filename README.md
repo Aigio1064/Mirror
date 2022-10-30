@@ -1,6 +1,6 @@
 # Mirror
 **此储存库因个人需要而存在，存放于 `GitHub` 储存库中。**  
-**此储存库遵循 <a href="./LICENSE" type="text/txt">MIT</a> 协议 !!!**  
+**此储存库遵循 <a href="./LICENSE" type="text/plain" target="_bland">MIT</a> 协议 !!!**  
 **内部文件遵循文件作者使用的协议，不受 MIT 协议影响。**
 ---
 ## 使用方式
