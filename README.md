@@ -1,10 +1,10 @@
-# Mirror  
+# Mirror
 **此储存库因个人需要而存在，存放于 `GitHub` 储存库中。**  
 **此储存库遵循 [MIT](./LICENSE) 协议 !!!**  
 **内部文件遵循文件作者使用的协议，不受 MIT 协议影响。**
 ---
 ## 使用方式
-
+<a href="test.html" target="_blank">查看示例</a>
 ### 直接引入
 ```html
 <script src="https://mirror.aigio1064.top/jquery/jquery.js"></script>
@@ -35,7 +35,7 @@ jquery,vue,react-dom
 ```
 ---
 ## 可使用的资源  
-> 只保留最新发行资源，不保留历史版本，有需要则在正常 CDN 站点查看  
+> 只保留最新发行资源，不保留历史版本，有需要请到正常 CDN 站点查看  
 
 | 资源标签 | 版本 | 脚本自动引入资源名 |
 | :----: | :----: | :----: |
