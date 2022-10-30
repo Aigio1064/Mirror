@@ -75,6 +75,11 @@
             createNewElement("head","script","",["src="+$a])
         })
     };
+    if (RegExp("jquery-ui","i").test($el)) {
+        $resourcesList.jquery_ui.forEach($a => {
+            createNewElement("head","script","",["src="+$a])
+        })
+    };
     if (RegExp("vue","i").test($el)) {
         $resourcesList.vue.forEach($a => {
             createNewElement("head","script","",["src="+$a])
