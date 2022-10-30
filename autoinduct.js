@@ -19,10 +19,12 @@
         react: [
             "https://mirror.aigio1064.top/react/cjs/react.production.min.js", // 来自本储存库
             "https://cdn.jsdelivr.net/npm/react@18.2.0/cjs/react.production.min.js", // 来自https://www.jsdelivr.com/
-            "https://unpkg.com/react@18.2.0/cjs/react.production.min.js", // 来自https://unpkg.com/
-            "https://mirror.aigio1064.top/react/umd/react.production.min.js", // 来自本储存库
-            "https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js", // 来自https://www.jsdelivr.com/
-            "https://unpkg.com/react@18.2.0/umd/react.production.min.js" // 来自https://unpkg.com/
+            "https://unpkg.com/react@18.2.0/cjs/react.production.min.js" // 来自https://unpkg.com/
+        ],
+        react_dom: [
+            "https://mirror.aigio1064.top/react-dom/cjs/react-dom.production.min.js", // 来自本储存库
+            "https://cdn.jsdelivr.net/npm/react-dom@18.2.0/cjs/react-dom.production.min.js", // 来自https://www.jsdelivr.com/
+            "https://unpkg.com/react-dom@18.2.0/cjs/react-dom.production.min.js" // 来自https://unpkg.com/
         ]
     };
     // 元素创建器 ↓ 此代码遵循 Apache 协议，原作者还是我，源在另一个库里
@@ -70,6 +72,11 @@
     };
     if (RegExp("react","i").test($el)) {
         $resourcesList.react.forEach($a => {
+            createNewElement("head","script","",["src="+$a,"crossorigin"])
+        })
+    };
+    if (RegExp("react-dom","i").test($el)) {
+        $resourcesList.react_dom.forEach($a => {
             createNewElement("head","script","",["src="+$a,"crossorigin"])
         })
     };

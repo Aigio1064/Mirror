@@ -21,10 +21,11 @@
 ```html
 <script a-srclist="src"></script>
 src改成需要的资源，写法：
-jqueryvuereact
-jquery;vue;react;
-jquery;vue;react
-jquery,vue,react
+jqueryvuereactreact-dom
+jqueryvuereact-dom
+jquery;vue;react-dom;
+jquery;vue;react-dom
+jquery,vue,react-dom
 格式随意只要保证单词拼写无误即可,按你自己的喜好来
 忽略大小写
 忽略先后顺序
@@ -41,3 +42,4 @@ jquery,vue,react
 | jquery | 3.6.1 | jquery.min.js |
 | vue | 2.7.13 | vue.min.js |
 | react | 16.8.0 | react.production.min.js |
+| react-dom | 16.8.0 | react-dom.production.min.js |
