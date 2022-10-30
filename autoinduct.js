@@ -7,12 +7,12 @@
     // 资源列表
     let $resourcesList = {
         jquery: [
-            "https://mirror.aigio1064.top/jquery/jquery.min.js", // 来自本储存库
+            "https://mirror.aigio1064.top/jquery/dist/jquery.min.js", // 来自本储存库
             "https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js", // 来自https://www.jsdelivr.com/
             "https://unpkg.com/jquery@3.6.1/dist/jquery.min.js" // 来自https://unpkg.com/
         ],
         vue: [
-            "https://mirror.aigio1064.top/vue/vue.min.js", // 来自本储存库
+            "https://mirror.aigio1064.top/vue/dist/vue.min.js", // 来自本储存库
             "https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.min.js", // 来自https://www.jsdelivr.com/
             "https://unpkg.com/vue@2.7.13/dist/vue.min.js" // 来自https://unpkg.com/
         ],
@@ -25,6 +25,16 @@
             "https://mirror.aigio1064.top/react-dom/cjs/react-dom.production.min.js", // 来自本储存库
             "https://cdn.jsdelivr.net/npm/react-dom@18.2.0/cjs/react-dom.production.min.js", // 来自https://www.jsdelivr.com/
             "https://unpkg.com/react-dom@18.2.0/cjs/react-dom.production.min.js" // 来自https://unpkg.com/
+        ],
+        babel_standalone: [
+            "https://mirror.aigio1064.top/babel-standalone/babel.min.js", // 来自本储存库
+            "https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js", // 来自https://www.jsdelivr.com/
+            "https://unpkg.com/babel-standalone@6.26.0/babel.min.js" // 来自https://unpkg.com/
+        ],
+        jquery_ui: [
+            "https://mirror.aigio1064.top/jquery-ui/dist/jquery-ui.min.js", // 来自本储存库
+            "https://cdn.jsdelivr.net/npm/jquery-ui@1.13.2/dist/jquery-ui.min.js", // 来自https://www.jsdelivr.com/
+            "https://unpkg.com/jquery-ui@1.13.2/dist/jquery-ui.min.js" // 来自https://unpkg.com/
         ]
     };
     // 元素创建器 ↓ 此代码遵循 Apache 协议，原作者还是我，源在另一个库里
@@ -77,6 +87,11 @@
     };
     if (RegExp("react-dom","i").test($el)) {
         $resourcesList.react_dom.forEach($a => {
+            createNewElement("head","script","",["src="+$a,"crossorigin"])
+        })
+    };
+    if (RegExp("babel-standalone","i").test($el)) {
+        $resourcesList.babel_standalone.forEach($a => {
             createNewElement("head","script","",["src="+$a,"crossorigin"])
         })
     };
