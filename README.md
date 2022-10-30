@@ -8,7 +8,7 @@
 <a href="test.html" target="_blank">查看示例</a>
 ### 直接引入
 ```html
-<script src="https://mirror.aigio1064.top/jquery/jquery.js"></script>
+<script src="https://mirror.aigio1064.top/jquery/dist/jquery.js"></script>
 ```
 ---
 ### 间接引入
