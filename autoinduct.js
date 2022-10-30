@@ -19,7 +19,10 @@
         react: [
             "https://mirror.aigio1064.top/react/react.production.min.js", // 来自本储存库
             "https://cdn.jsdelivr.net/npm/react@18.2.0/cjs/react.production.min.js", // 来自https://www.jsdelivr.com/
-            "https://unpkg.com/react@18.2.0/cjs/react.production.min.js" // 来自https://unpkg.com/
+            "https://unpkg.com/react@18.2.0/cjs/react.production.min.js", // 来自https://unpkg.com/
+            "https://mirror.aigio1064.top/react/react-dom.profiling.min.js", // 来自本储存库
+            "https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react-dom.profiling.min.js", // 来自https://www.jsdelivr.com/
+            "https://unpkg.com/react@18.2.0/umd/react-dom.profiling.min.js" // 来自https://unpkg.com/
         ]
     };
     // 元素创建器 ↓ 此代码遵循 Apache 协议，原作者还是我，源在另一个库里
